@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+</head>
+
+<body>
+    <style>
+        body {
+            text-align: center;
+            background-image: url(1.jpg);
+            background-size: cover;
+            height: 100vh;
+            text-align: center;
+        }
+
+        h1 {
+            display: inline-block;
+            color: #fff;
+            font-size: 2em;
+        }
+
+        button {
+            font-size: 1.5em;
+            background-color: red;
+            color: #fff;
+        }
+
+        p {
+            font-size: 2em;
+            color: #fff
+        }
+    </style>
+    <div>
+        <h1 id="min">
+            0
+        </h1>
+        <h1 id="sec">
+            0
+        </h1>
+        <h1 id="milisec">
+            0
+        </h1>
+    </div>
+    <div>
+        <button id="startbtn" onclick="starttime()">Start</button>
+        <button id="pausebtn" disabled onclick="pausetime()">Pause</button>
+        <button id="resetbtn" disabled onclick="resettime()">Reset</button>
+        <button onclick="laprecord()">Lap</button>
+    </div>
+    <p id="laptime"></p>
+</body>
+<script src="app.js"></script>
+
+</html>
